@@ -1,0 +1,61 @@
+* {
+font-family: "Copperplate", cursive, sans;
+background-color: rgb(255, 251, 245);
+}
+
+body {
+    font-size: 25px;
+}
+.cheers {
+text-indent: 0px;
+margin-left: -40px;
+}
+
+#dragon {
+    font-size: larger;
+    color: rgb(148, 180, 245);
+    display: block;
+}
+
+.color li {
+
+    color: gray;
+}
+
+a {
+  line-height: 30px;
+}
+
+a:visited {
+    color: pink;
+}
+
+a:hover {
+    color:rgb(148, 180, 245);
+}
+
+#violet {
+max-width: 100%;
+max-height: auto;
+width: 15%;
+height: 15%;
+
+}
+
+img {
+    border-radius: 6px;
+    border-style: groove;
+    text-align: center;
+}
+.popper {
+  
+    margin: 0 auto;
+
+    width: 700px;
+    padding: 0px;
+
+}
+
+div{
+    text-align: center;
+}
