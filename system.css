@@ -1,0 +1,139 @@
+* {
+    font-family: "Hanuman", serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+  }
+
+.h1 {
+    text-align: center;
+}
+
+
+#display {
+    text-align: center;
+}
+
+.vanderpump ,
+.lala ,
+.bitch ,
+.trashy {
+
+   display: inline-block;
+}
+
+#color {
+    border: solid black 2px;
+    margin-right: 12%;
+    margin-left: 12%;
+    text-align: center;
+   
+    
+    }
+
+.vanderpump {
+    background-color: rgb(120, 76, 207) ;
+    margin: 20px;
+    padding: 40px;
+}
+
+.lala{
+    background-color: rgb(139, 125, 209) ;
+    margin: 20px;
+    padding: 40px 50px;
+}
+
+.bitch{
+    background-color: rgb(21, 17, 41) ;
+    margin: 20px;
+    padding: 40px 65px;
+    color: white;
+}
+
+.trashy {
+    background-color: rgb(235, 223, 195);
+    margin: 20px;
+    padding: 40px;
+}
+
+.fonts {
+    border: solid black 2px;
+    margin-right: 12%;
+    margin-left: 12%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+
+.hanuman {
+    text-decoration: underline;
+    font-family: "Hanuman", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hanuman-regular {
+    font-family: "Hanuman", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hanuman-bold{
+    font-family: "Hanuman", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.hanuman-italic {
+    font-family: "Hanuman", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+ .sanchez {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+
+ }
+ .sanchez-regular
+     {
+        font-family: "Sanchez", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .sanchez-bold {
+        font-family: "Sanchez", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+    .sanchez-italic {
+        font-family: "Sanchez", serif;
+        font-weight: 400;
+        font-style: italic;
+        padding-bottom: 70%;
+    }
+
+    .text-styles {
+        border: solid black 2px;
+        margin-right: 12%;
+        margin-left: 12%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+
+
+    .ok {
+        list-style-position: inside;
+        padding-left: 550px;
+        text-align: left;
+    }
