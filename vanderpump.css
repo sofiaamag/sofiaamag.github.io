@@ -1,0 +1,123 @@
+* {
+    background-color: rgb(235, 223, 195);
+    text-align: center;
+}
+
+
+#full {
+    position:relative;
+    display: inline;
+    background-image: linear-gradient(rgba(235, 223, 195,.9), rgba(235, 223, 195,.9)),url("/Users/sofiamagnani/Desktop/projects/Vanderpump-Rules/background-image/8331.jpg");
+    background-size: cover;
+    background-size: 100% 100%;
+    line-height: 100%;
+    z-index: 0;
+    text-align: center;
+    height: auto;
+    display:block;
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left:0px;
+    right:0;
+    margin:0px;
+    padding:0px;
+}
+div #home-header {
+    font-family: "Hanuman", serif;
+    text-align: center;
+    color: rgb(21, 17, 41);
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+   width: auto;
+
+
+}
+
+span {
+    display: inline-block;
+    padding: 20px;
+    font-family: "Sanchez", serif;
+    border-bottom: solid rgb(139, 125, 209) 2px;
+    z-index: 6;
+    box-shadow:  3px 3px 3px 2px rgb(107, 104, 102);
+    border-radius: 5%;
+    
+}
+
+span:hover {
+    border-bottom: none;
+
+}
+
+span:active{
+    box-shadow: none;
+}
+
+a:hover {
+    color: rgb(107, 104, 102);
+}
+
+a:active {
+    color: rgb(21, 17, 41);
+    box-shadow: none;
+}
+
+body {
+    text-align: center;
+}
+
+
+.photo-cast {
+    width: 800px;
+    height: 500px;
+    border:rgb(120, 76, 207) 2px;
+    border-style: double;
+    padding: 20px;
+    margin-top: 5%;
+    text-align: center;
+    z-index:5;
+    position:absolute;f
+    right:50px;
+    left:450px;
+    top: 160px;
+    bottom: 50px;
+    border-radius: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(21, 17, 41);
+    z-index:4;
+    
+    
+}
+
+body{
+    font-family: "Sanchez", serif;
+}
+
+img {
+    border-radius-t: 15%;
+}
+
+#lisa-photo {
+    border-radius: 20%;
+    border: double 4px black;
+    outline: solid 3px black;
+    padding: 3px;
+}
+
+ #lisa-header, #ariana-header {
+    text-align: center;
+    font-family: "Hanuman", serif;
+}
+
+#ariana-photo {
+    border-radius: 20%;
+    border: double 4px black;
+    outline: solid 3px black;
+    padding: 3px;
+}
