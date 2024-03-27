@@ -7,7 +7,7 @@
 #full {
     position:relative;
     display: inline;
-    background-image: linear-gradient(rgba(235, 223, 195,.9), rgba(235, 223, 195,.9)),url("/Users/sofiamagnani/Desktop/github-site/sofiaamag.github.io/background-image/8331.jpg");
+    background-image: linear-gradient(rgba(235, 223, 195,.9), rgba(235, 223, 195,.9)),url("8331.jpg");
     background-size: cover;
     background-size: 100% 100%;
     line-height: 100%;
