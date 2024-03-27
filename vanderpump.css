@@ -7,7 +7,7 @@
 #full {
     position:relative;
     display: inline;
-    background-image: linear-gradient(rgba(235, 223, 195,.9), rgba(235, 223, 195,.9)),url("/Users/sofiamagnani/Desktop/projects/Vanderpump-Rules/background-image/8331.jpg");
+    background-image: linear-gradient(rgba(235, 223, 195,.9), rgba(235, 223, 195,.9)),url("/Users/sofiamagnani/Desktop/github-site/sofiaamag.github.io/background-image/8331.jpg");
     background-size: cover;
     background-size: 100% 100%;
     line-height: 100%;
@@ -70,18 +70,20 @@ body {
 
 
 .photo-cast {
-    width: 800px;
-    height: 500px;
-    border:rgb(120, 76, 207) 2px;
-    border-style: double;
+    width: 1000px;
+    height: 700px;
+    border-radius: 20%;
+    border: double 6px rgb(21, 17, 41);
+    outline: solid 3px  rgb(21, 17, 41);
+    padding: 2px;
     padding: 20px;
     margin-top: 5%;
     text-align: center;
     z-index:5;
     position:absolute;f
-    right:50px;
-    left:450px;
-    top: 160px;
+    right:150px;
+    left:360px;
+    top: 150px;
     bottom: 50px;
     border-radius: 10px;
 
@@ -110,12 +112,12 @@ img {
     padding: 3px;
 }
 
- #lisa-header, #ariana-header {
+ #lisa-header, .ariana-header {
     text-align: center;
     font-family: "Hanuman", serif;
 }
 
-#ariana-photo {
+.ariana-photo {
     border-radius: 20%;
     border: double 4px black;
     outline: solid 3px black;
