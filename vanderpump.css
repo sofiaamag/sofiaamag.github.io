@@ -137,8 +137,9 @@ img {
 @media only screen and (max-width: 321px) {
     .photo-cast {
         width: 240px;
-        text-align: center;
+        margin: 0;
         top: 500px;
+        line-height: 5%;
 
     }
     #home-header {
