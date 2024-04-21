@@ -89,7 +89,7 @@ body {
     margin-top: 5%;
     text-align: center;
     z-index:5;
-    position:absolute;f
+    position:absolute;
     right:150px;
     left:360px;
     top: 150px;
@@ -132,3 +132,10 @@ img {
     outline: solid 3px black;
     padding: 3px;
 }
+
+@media only screen and (max-width: 320px) {
+    img {
+        width: 240px;
+    }
+}
+
