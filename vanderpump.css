@@ -138,9 +138,12 @@ img {
     .photo-cast {
         width: 240px;
         text-align: center;
+        top: 500px;
+
     }
     #home-header {
         font-size: 20px;
+        text-wrap: wrap;
     }
 }
 
