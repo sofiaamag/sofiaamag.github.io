@@ -138,5 +138,8 @@ img {
         width: 240px;
         text-align: center;
     }
+    #home-header {
+        font-size: 20px;
+    }
 }
 
