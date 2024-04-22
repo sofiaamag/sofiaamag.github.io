@@ -134,7 +134,7 @@ img {
     padding: 3px;
 }
 
-@media only screen and (max-width: 400px) and (min-width: 200px){
+@media only screen and (max-width: 430px) and (min-width: 200px){
     .photo-cast {
         width: 15rem;
         height: 13rem;
