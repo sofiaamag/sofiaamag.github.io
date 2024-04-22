@@ -134,17 +134,25 @@ img {
     padding: 3px;
 }
 
-@media only screen and (max-width: 321px) {
+@media only screen and (max-width: 400px) and (min-width: 200px){
     .photo-cast {
-        width: 240px;
-        margin: 0;
-        top: 500px;
-        line-height: 5%;
-
+        width: 15rem;
+        height: 13rem;
+        margin-top: 2rem;
+        top: 450px;
+        left: 2rem;
+        
     }
-    #home-header {
+   div  #home-header {
         font-size: 20px;
         text-wrap: wrap;
+        line-height: 50px;
+        text-align: center;
+    }
+
+   body span a {
+        text-align: center;
+        font-size: 0.5rem;
     }
 }
 
