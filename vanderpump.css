@@ -52,6 +52,7 @@ span {
     z-index: 6;
     box-shadow:  3px 3px 3px 2px rgb(107, 104, 102);
     border-radius: 5%;
+   
     
 }
 
@@ -80,8 +81,8 @@ body {
 
 
 .photo-cast {
-    width: 1000px;
-    height: 700px;
+    width: 100vw;
+    height: 700vw;
     border-radius: 20%;
     border: double 6px rgb(21, 17, 41);
     outline: solid 3px  rgb(21, 17, 41);
@@ -103,6 +104,7 @@ a {
     text-decoration: none;
     color: rgb(21, 17, 41);
     z-index:4;
+    transition: color 750ms linear;
     
     
 }
@@ -136,12 +138,13 @@ img {
 
 @media only screen and (max-width: 430px) and (min-width: 200px){
     .photo-cast {
-        width: 15rem;
-        height: 13rem;
-        margin-top: 2rem;
-        top: 450px;
-        left: 2rem;
-        
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 50%;
+        width: 75vw;
+        height: 50vw;
     }
    div  #home-header {
         font-size: 20px;
@@ -153,6 +156,24 @@ img {
    body span a {
         text-align: center;
         font-size: 0.5rem;
+        position: static;
+       
+    }
+    span {
+        margin-bottom: 10px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 }
 
+@media only screen and (min-width: 421px) and (max-width: 1339px) {
+    .photo-cast {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 50%;
+        width: 90vw;
+        height: 75vw;
+    }
+}
