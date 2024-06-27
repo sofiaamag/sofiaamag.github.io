@@ -1,6 +1,7 @@
 * {
     background-color: rgb(235, 223, 195);
     text-align: center;
+    box-sizing: border-box;
   
   }
 
@@ -136,10 +137,10 @@ img {
     padding: 3px;
 }
 
-@media only screen and (max-width: 430px) and (min-width: 200px){
+@media only screen and (min-width: 200px) and (max-width: 430px) {
     .photo-cast {
         position: absolute;
-        top: 25%;
+        top: 10%;
         left: 50%;
         transform: translateX(-50%);
         margin-top: 50%;
@@ -166,14 +167,17 @@ img {
     }
 }
 
-@media only screen and (min-width: 421px) and (max-width: 1339px) {
+@media only screen and (min-width: 431px) and (max-width: 700px) {
     .photo-cast {
         position: absolute;
-        top: 0;
+        top: 10%;
         left: 50%;
         transform: translateX(-50%);
         margin-top: 50%;
         width: 90vw;
         height: 75vw;
+    }
+    div  #home-header {
+        line-height: 50px;
     }
 }
