@@ -312,9 +312,7 @@ h1 a {
     margin: auto;
 }
 #grid-template {
-    grid: repeat(3, 210px) / repeat(2, 150px);
-
-    
+    grid: repeat(3, 210px) / repeat(2, 150px); 
 }
 .all-books {
    width: 53%;
@@ -371,7 +369,3 @@ a {
     text-align: center;
 }
 
-
-width: 50%;
-
-height: 75%;

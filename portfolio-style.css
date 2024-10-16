@@ -1,0 +1,26 @@
+.container-projects {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  
+}
+.container-projects {
+    display: grid;
+    width: auto;
+    height: auto;
+    grid: repeat(2, 80%) / repeat(2, 50%);
+    justify-content: space-around;
+    justify-items: center;
+  
+}
+
+.projects {
+  display: grid;
+  width: 90%;
+  height: 90% ;
+  margin: 5%;
+  justify-content: center;
+  justify-items: center;
+
+  
+}

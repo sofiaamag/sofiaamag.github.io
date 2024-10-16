@@ -5,6 +5,7 @@
     font-family: 'Courier New', Courier, monospace;
     background-color: var(--background);
     color: var(--font-color);
+    transition: var(--default-transition);
   
 }
 
@@ -20,7 +21,7 @@
     --sb: var(--sun-background);
     --icon-sun: rgb(199, 140, 30);
     --font-color: var(--navy);
-    --switch-circle-pos: 7%;
+    --switch-circle-pos: 0%;
     --moon-color: var(--navy);
     --mb: var(--switch-circle-bg);
 
@@ -43,7 +44,7 @@
     --mb: var(--royal-blue);
     --switch-circle-bg: rgb(141, 57, 111);
 
-    --switch-circle-pos: 53%;
+    --switch-circle-pos: 125%;
 
     --eye: var(--navy);
 
@@ -51,15 +52,17 @@
 
 }
 
+:root {
+    --default-border-radius: 8px;
+    --default-transition: color 0.3s ease-in, transform 0.3s ease-in, background-color 0.3s ease-in-out, border-color 0.3s ease-in;
+}
 #eye-container {
     width: 10%;
     height: 10%;
     margin: 0 0 0 8%;
-    background-color: inherit;
+    background-color: var(--pink);
     display: block;
     align-items: center;
-  
-    
 }
 
 
@@ -71,6 +74,7 @@
     align-items: center;
     margin-bottom: 0;
     margin-right: 70%;
+    transition: var(--default-transition);
    
  
 }
@@ -82,9 +86,11 @@
     overflow: hidden;
     margin: 0;
     border: 1px solid var(--eye);
-    background-color: inherit;
+    background-color: var(--pink);
     animation: eyelid 5s infinite;
     animation-delay: 7s;
+    transition: background-color 0.3s ease-in-out;
+   
 
 
 }
@@ -95,8 +101,9 @@
     width: 53%;
     border-radius: 100%;
     position: relative;
-    background-color: inherit;
+    background-color: var(--pink);
     border: 1px solid var(--eye); 
+ 
 }
 
 .iris {
@@ -108,6 +115,7 @@
     border: 1px solid var(--eye);
     margin: 25% 5% 50% 20%;
     animation: move 5s ease-out infinite;
+   
 }
 
 #lid {
@@ -145,7 +153,7 @@
       animation-timing-function: ease-in;
     }
     93% {
-      transform: translateX(20px) translateY(15px) scaleY(0)
+      transform: translateX(20px) translateY(20px) scaleY(0)
     }
     100% {
       animation-timing-function: ease-out;
@@ -165,6 +173,17 @@
         }
         100% {
           animation-timing-function: none;
+         
+        }
+      }
+
+      @keyframes background {
+        from { 
+            background-color: var(--sb);
+
+        }
+        to {
+            background-color: var(--mb);
         }
       }
   
@@ -182,6 +201,7 @@ nav {
     flex-direction: column;
     background-color: var(--pink);
     width: 100%;
+    transition: var(--default-transition);
 }
 
 
@@ -198,6 +218,7 @@ nav {
     padding: 0.66rem;  
     left: 87%;
     position: relative;
+    transition: var(--default-transition);
    
      
     
@@ -206,27 +227,28 @@ nav {
 #theme-switcher::before {
     content: '';
     position: absolute;
-    width: 40%;
+    width: 39%;
     height: 83%;
-    background-color:  var(--sun-background);
+    background-color: var(--sun-background);
     border-radius: 50%;
     z-index: 0;
-    left: var(--switch-circle-pos);
+    transition: var(--default-transition);
+    transform: translateX(var(--switch-circle-pos));
 
 }
 
 #theme-switcher svg{
     z-index: 1;
+    transition: var(--default-transition);
 }
 
 #icon-sun {
     stroke: var(--icon-sun);
     background-color: var(--sb);
     border-radius: 50%;
-    margin-left: 6%;
-    
-    
-    
+    margin-left: 6.5%;
+    transition: var(--default-transition);
+    fill: none;
 }
 
 
@@ -234,7 +256,9 @@ nav {
     background-color: var(--mb) ; 
     border-radius: 50px;
     stroke: var(--moon-color);
- 
+    margin-left: 7%;
+    transform: var(--default-transition);
+    fill: none;
 
 }
 
@@ -255,14 +279,15 @@ ol * {
     flex-wrap: nowrap;
     margin-bottom: 80%;
     margin-top: 10%;
+   
+   
 }
 
 li {
     margin: clamp(5%, 1.5vw, 10%);
     text-decoration: underline;
     background-color: var(--pink);
-    
-    
+    font-size: 1.1rem;
 
 }
 
@@ -289,7 +314,7 @@ h1 a {
 .welcome {
     display: grid;
     text-align: center;
-    margin: 10%;
+    margin: 5%;
     
 }
 
@@ -324,6 +349,7 @@ h1 a {
 .homepage-books {
     display: block;
     text-align: center;
+   
    
 }
 
