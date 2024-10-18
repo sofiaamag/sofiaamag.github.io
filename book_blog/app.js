@@ -7,6 +7,9 @@ const switchTheme = () => {
     newTheme = (dataTheme === 'light') ? 'dark' : 'light';
 
     rootElem.setAttribute('data-theme', newTheme);
+
+    //Set new local storage item
+    localStorage.setItem('theme', newTheme);
 }
 
 

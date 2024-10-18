@@ -80,6 +80,12 @@ nav {
     z-index: 1;
 }
 
+@media (min-width: 20px) and (max-width: 650px) {
+    #theme-switcher-container {
+        display: none;
+    }
+}
+
 #icon-sun {
     stroke: var(--icon-sun);
     background-color: var(--sun-background);
@@ -149,21 +155,21 @@ li {
 }
 
 nav h1{
-    display: inline;
-    margin-left: 0%;
+    display: inline-block;
     font-size: 2rem;
     margin-left: 5%;
-    margin-top: 1%;
+    margin-top: 0;
     background-color: var(--pink);
     width: 200px;
     height: 40px;
-    
+    bottom: 50%;
 
 }
 
 h1 a {
     all: unset;
-    justify-content: flex-start;
+    display: inline-block;
+    position: absolute;
 }
 
 
@@ -274,6 +280,7 @@ h1 a {
     }
     h1 a{
         font-size: 70%;
+        top: 50%;
     }
 }
 
