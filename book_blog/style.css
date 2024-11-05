@@ -6,6 +6,7 @@
     background-color: var(--background);
     color: var(--font-color);
     transition: var(--default-transition);
+    box-sizing: border-box;
   
 }
 
@@ -21,7 +22,7 @@
     --sb: var(--sun-background);
     --icon-sun: rgb(199, 140, 30);
     --font-color: var(--navy);
-    --switch-circle-pos: -0.2vw;
+    --switch-circle-pos: 10%;
     --moon-color: var(--navy);
     --mb: var(--switch-circle-bg);
 
@@ -57,141 +58,7 @@
     --default-transition: color 0.3s ease-in, transform 0.3s ease-in, background-color 0.3s ease-in-out, border-color 0.3s ease-in;
 }
 
-@media (min-width:801px) and (max-width: 3000px) {
-    #eye-container {
-    width: 10%;
-    height: 10%;
-    margin: 0 0 0 8%;
-    background-color: var(--pink);
-    display: inline-block;
-    align-items: center;
-    bottom: 30%;
-    position: relative;
-    right: 75%;
-}}
 
-
-.aligner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 0;
-    margin-right: 70%;
-    transition: var(--default-transition);
-   
- 
-}
-.clip-circle {
-    height: 50px;
-    width: 50px;
-    border-radius: 90% 5px;
-    transform: rotate(45deg);
-    overflow: hidden;
-    margin: 0;
-    border: 1px solid var(--eye);
-    background-color: var(--pink);
-    animation: eyelid 5s infinite;
-    animation-delay: 7s;
-    transition: background-color 0.3s ease-in-out;
-   
-
-
-}
-
-
-.eye {
-    height: 63%;
-    width: 53%;
-    border-radius: 100%;
-    position: relative;
-    background-color: var(--pink);
-    border: 1px solid var(--eye); 
- 
-}
-
-.iris {
-    height: 50%;
-    width: 50%;
-    border-radius: 100%;
-    position: absolute;
-    background-color: var(--eye);
-    border: 1px solid var(--eye);
-    margin: 25% 5% 50% 20%;
-    animation: move 5s ease-out infinite;
-   
-}
-
-#lid {
-
-    animation: blink 5s infinite;
-    animation-delay: 7s;
-}
-  
-
-  @keyframes move {
-    0% {
-      transform: none;
-    }
-    20% {
-      transform: translateX(-5px) translateY(5px) scale(0.95);
-    }
-    25%, 44% {
-      transform: translateX(5px) translateY(5px);
-    }
-    50%, 60% {
-      transform: translateX(5px) translateY(-5px) scale(0.95);
-    }
-    66%, 95% {
-      transform: translateX(-5px) translateY(-5px);
-    }
-    99%, 100% {
-        animation-timing-function: ease-in;
-    }
-  }
-  
-  @keyframes blink {
-
-    90% {
-      transform: none;
-      animation-timing-function: ease-in;
-    }
-    93% {
-      transform: translateX(20px) translateY(20px) scaleY(0)
-    }
-    100% {
-      animation-timing-function: ease-out;
-    }
-  }
-
-  @keyframes eyelid {
-
-        90% {
-          animation-timing-function: ease-in;
-          transform: rotate(45deg);
-        }
-        93% {
-          transform:  translateY(15px) scaleY(0) ;
-
-          
-        }
-        100% {
-          animation-timing-function: none;
-         
-        }
-      }
-
-      @keyframes background {
-        from { 
-            background-color: var(--sb);
-
-        }
-        to {
-            background-color: var(--mb);
-        }
-      }
-  
 
 
 nav {
@@ -204,36 +71,6 @@ nav {
     transition: var(--default-transition);
 }
 
-.inline{
-    display: inline-block;
-    text-align: end;
-    right: 90%;
-    height: 100%;
-    width: 75%;
-    left: 20%;
-    position: relative;
-    background-color: var(--pink);
-}
-
-    
-
-@media (min-width: 20px) and (max-width: 800px) {
-    .inline #theme-switcher{
-        display: none;
-    }
-
-    #eye-container { 
-        position: relative;
-        margin-left: 10%;
-        width: 10%;
-        background-color: var(--pink);
-    }
-    div .clip-circle .aligner {
-        width: 10%;
-        height: 10%;
-    }
-}
-    
 
 
 #theme-switcher {
@@ -244,24 +81,33 @@ nav {
     align-items: center;
     gap: 1.3rem;
     cursor: pointer;
-    width: 6%;
+    width: 30%;
     height: auto;
     padding: 0.66rem;  
-    left: 85%;
     position: absolute;
-    bottom: 95%;
     transition: var(--default-transition);
     z-index: 4;
+    top: 70%;
    
-     
-    
+  
+}
+
+#switcher-nav {
+    display: inline;
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 80%;
+    top: 2%;
+    text-align: center;
+
 }
 
 #theme-switcher::before {
     content: '';
     position: absolute;
-    width: 39%;
-    height: 83%;
+    width: 38.5%;
+    height: 85%;
     background-color: var(--sun-background);
     border-radius: 50%;
     z-index: 0;
@@ -279,7 +125,7 @@ nav {
     stroke: var(--icon-sun);
     background-color: var(--sb);
     border-radius: 50%;
-    margin-left: 6%;
+    margin-left: 4%;
     transition: var(--default-transition);
     fill: none;
 }
@@ -295,55 +141,17 @@ nav {
 
 }
 
+@media only screen and (min-width: 100px) and (max-width: 600px){
+    #theme-switcher {
+        display: none;
+
+    }
+
+}
+
 a {
     all: unset;
 }
-
-ol {
-    all: unset;
-    display: block;
-   margin-left: 80%
-    
-  
-}
-
-ol * {
-    display: inline;
-    flex-wrap: nowrap;
-    margin-bottom: 80%;
-    margin-top: 10%;
-   
-   
-}
-
-li {
-    margin: clamp(5%, 1.5vw, 10%);
-    text-decoration: underline;
-    background-color: var(--pink);
-    font-size: 1.1rem;
-
-}
-
- h1{
-    display: inline;
-    margin-left: 0%;
-    margin-left: 5%;
-    margin-top: 1%;
-    background-color: var(--pink);
-    width: 500px;
-    height: 200px;
-    
-    
-    
-
-}
-
-h1 a {
-    all: unset;
-    font-size: 2vw;
-    
-}
-
 
 
 .welcome {
@@ -351,34 +159,6 @@ h1 a {
     text-align: center;
     margin: 5%;
     
-}
-
-@media (min-width: 720px) and (max-width: 2400px) {
-    ol  {
-        margin-left: 65%;
-        padding: 0;
-       
-    }
-}
-
-@media (min-width: 600px) and (max-width: 700px){
-    ol {
-        margin-left: 65%;
-    }
-}
-
-@media (min-width: 10px) and (max-width: 710px) {
-    ol { 
-        margin-left: 60%;
-        
-}
-}
-
-@media (min-width: 10px) and (max-width: 600px) {
-    li {
-        font-size: 0.75rem;
-        display: inline;
-    }
 }
 
 .homepage-books {

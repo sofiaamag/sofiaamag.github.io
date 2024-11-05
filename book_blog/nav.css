@@ -75,64 +75,417 @@ a {
     all: unset;
 }
 
-ol {
-    all: unset;
-    display: inline-block;
-    top: 80%;
-    bottom: 10%;
-    right: 5%;
-    width: 100%;
-    height: auto;
-    position: absolute; 
-  
+@media only screen and (min-width: 1500px) and (max-width: 2000px){
+  ol {
+all: unset;
+display: block;
+position: absolute; 
+top: 23%;
+right: 2%;
+width: 35%;
+height: auto;
+
 }
 
 li {
-    margin: clamp(5%, 1.5vw, 10%);
-    text-decoration: underline;
-    background-color: var(--pink);
-    font-size: 2vw;
+display: inline;
+margin: clamp(5%, 1.5vw, 10%);
+text-decoration: underline;
+background-color: var(--pink);
+font-size: 1.5vw;
+position: relative;
+top: 30%;
 
 }
 
 h1{
-    display: inline;
-    margin-top: 1%;
-    background-color: var(--pink);
-
+display: inline;
+margin-left: 5%;
+margin-top: 1%;
+background-color: var(--pink);
+width: auto;;
+height: auto;
+position: absolute;
+top: 19%;
 }
+
 
 h1 a {
-    all: unset;
-    font-size: 3.3vw;
-    right: 80%;
-    bottom: 30%;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    
+all: unset;
+font-size: 2.5vw;
+font-weight: 100;
 }
+
+}
+
+@media only screen and (min-width: 1300px ) and (max-width: 1500px){
+  ol {
+all: unset;
+display: block;
+position: absolute; 
+top: 19%;
+right: 2%;
+width: 35%;
+height: auto;
+
+}
+
+li {
+display: inline;
+margin: clamp(5%, 1.5vw, 10%);
+text-decoration: underline;
+background-color: var(--pink);
+font-size: 1.5vw;
+position: relative;
+top: 30%;
+
+}
+
+h1{
+display: inline;
+margin-left: 5%;
+margin-top: 1%;
+background-color: var(--pink);
+width: auto;;
+height: auto;
+position: absolute;
+top: 15%;
+}
+
+
+h1 a {
+all: unset;
+font-size: 2.5vw;
+font-weight: 100;
+}
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1300px){
+  ol {
+all: unset;
+display: block;
+position: absolute; 
+top: 15%;
+right: 2%;
+width: 35%;
+height: auto;
+
+}
+
+li {
+display: inline;
+margin: clamp(5%, 1.5vw, 10%);
+text-decoration: underline;
+background-color: var(--pink);
+font-size: 1.5vw;
+position: relative;
+top: 30%;
+
+}
+
+h1{
+display: inline;
+margin-left: 5%;
+margin-top: 1%;
+background-color: var(--pink);
+width: auto;;
+height: auto;
+position: absolute;
+top: 12%;
+}
+
+
+h1 a {
+all: unset;
+font-size: 2.5vw;
+font-weight: 100;
+}
+
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px){
+  ol {
+all: unset;
+display: block;
+position: absolute; 
+top: 12%;
+right: 2%;
+width: 35%;
+height: auto;
+
+}
+
+li {
+display: inline;
+margin: clamp(5%, 1.5vw, 10%);
+text-decoration: underline;
+background-color: var(--pink);
+font-size: 1.5vw;
+position: relative;
+top: 30%;
+
+}
+
+h1{
+display: inline;
+margin-left: 5%;
+margin-top: 1%;
+background-color: var(--pink);
+width: auto;;
+height: auto;
+position: absolute;
+top: 10%;
+}
+
+
+h1 a {
+all: unset;
+font-size: 2.5vw;
+font-weight: 100;
+}
+
+}
+
+@media only screen and (min-width: 650px) and (max-width: 800px){
+  ol {
+all: unset;
+display: block;
+position: absolute; 
+top: 9%;
+right: 2%;
+width: 35%;
+height: auto;
+
+}
+
+li {
+display: inline;
+margin: clamp(5%, 1.5vw, 10%);
+text-decoration: underline;
+background-color: var(--pink);
+font-size: 1.7vw;
+position: relative;
+top: 30%;
+
+}
+
+h1{
+display: inline;
+margin-left: 5%;
+margin-top: 1%;
+background-color: var(--pink);
+width: auto;;
+height: auto;
+position: absolute;
+top: 8%;
+}
+
+
+h1 a {
+all: unset;
+font-size: 2.5vw;
+font-weight: 100;
+}
+
+}
+
+@media only screen and (min-width: 550px) and (max-width: 650px){
+  ol {
+all: unset;
+display: block;
+position: absolute; 
+top: 8%;
+right: 2%;
+width: 35%;
+height: auto;
+
+}
+
+li {
+display: inline;
+margin: clamp(5%, 1.5vw, 10%);
+text-decoration: underline;
+background-color: var(--pink);
+font-size: 1.75vw;
+position: relative;
+top: 30%;
+
+}
+
+h1{
+display: inline;
+margin-left: 5%;
+margin-top: 1%;
+background-color: var(--pink);
+width: auto;;
+height: auto;
+position: absolute;
+top: 7%;
+}
+
+
+h1 a {
+all: unset;
+font-size: 2.5vw;
+font-weight: 100;
+}
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 550px){
+  ol {
+all: unset;
+display: block;
+position: absolute; 
+top: 7%;
+right: 2%;
+width: 35%;
+height: auto;
+
+}
+
+li {
+display: inline;
+margin: clamp(5%, 1.5vw, 10%);
+text-decoration: underline;
+background-color: var(--pink);
+font-size: 1.5vw;
+position: relative;
+top: 30%;
+
+}
+
+h1{
+display: inline;
+margin-left: 5%;
+margin-top: 1%;
+background-color: var(--pink);
+width: auto;;
+height: auto;
+position: absolute;
+top: 7%;
+}
+
+
+h1 a {
+all: unset;
+font-size: 2.5vw;
+font-weight: 100;
+}
+
+}
+
+@media only screen and (min-width: 420px) and (max-width: 500px){
+  ol {
+all: unset;
+display: block;
+position: absolute; 
+top: 5%;
+right: 5%;
+width: 35%;
+height: auto;
+
+}
+
+li {
+display: inline;
+margin: 0 0 0 1%;
+text-decoration: underline;
+background-color: var(--pink);
+font-size: 1.5vw;
+position: relative;
+top: 30%;
+
+}
+
+h1{
+display: inline;
+margin-left: 5%;
+margin-top: 1%;
+background-color: var(--pink);
+width: auto;;
+height: auto;
+position: absolute;
+top: 5%;
+}
+
+
+h1 a {
+all: unset;
+font-weight: 100;
+}
+
+}
+
+@media only screen and (min-width: 300px ) and (max-width: 420px){
+  ol {
+all: unset;
+display: block;
+position: absolute; 
+top: 5%;
+right: 7%;
+width: 35%;
+height: auto;
+
+}
+
+li {
+display: inline;
+margin: 0 0 0 1%;
+text-decoration: underline;
+background-color: var(--pink);
+font-size: 1.5vw;
+position: relative;
+top: 30%;
+
+}
+
+h1{
+display: inline;
+margin-left: 5%;
+margin-top: 1%;
+background-color: var(--pink);
+width: auto;;
+height: auto;
+position: absolute;
+top: 5%;
+}
+
+
+h1 a {
+all: unset;
+font-weight: 100;
+}
+
+}
+
 
 .inline{
-    display: flex;
-    height: 80%;
-    width: 100%;
-    left: 0%;
-    background-color: var(--pink);
+  display: flex;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  top: 5%;
+  background-color: var(--pink);
+  margin-bottom: 10%;
 }
-
-@media (min-width:801px) and (max-width: 3000px) {
     #eye-container {
-    width: 10%;
-    height: 10%;
-    margin: 30% 0  10% 0 ;
+    width: 25%;
+    height: 5%;
+    margin: 1% 0;
     background-color: var(--pink);
-    display: inline-block;
+    display: inline;
     position: absolute;
-    bottom: 30%;
-    right: 75%;
-}}
+    top: 2%;
+    bottom: 90%;
+    right: 65%;
+    }
 
+div .clip-circle .aligner {
+  position: absolute;
+    width: 70%;
+    height: 70%;
+}
 
 .aligner {
     display: flex;
@@ -147,8 +500,8 @@ h1 a {
  
 }
 .clip-circle {
-    height: 4vw;
-    width: 4vw;
+    height: 5vw;
+    width: 5vw;
     border-radius: 90% 5px;
     transform: rotate(45deg);
     overflow: hidden;
@@ -165,8 +518,8 @@ h1 a {
 
 
 .eye {
-    height: 63%;
-    width: 53%;
+    height: 69%;
+    width: 59%;
     border-radius: 100%;
     position: relative;
     background-color: var(--pink);
@@ -190,6 +543,18 @@ h1 a {
 
     animation: blink 5s infinite;
     animation-delay: 7s;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 600px){
+  #eye-container{
+    display: none;
+  }
+  h1 a{
+    font-size: 4vw;
+  }
+  h1{
+    top: 7%;
+  }
 }
   
 
@@ -256,85 +621,6 @@ h1 a {
       }
   
 
-
-
-
-@media (min-width: 20px) and (max-width: 800px) {
-    .inline #theme-switcher{
-        display: none;
-    }
-
-    #eye-container { 
-        position: relative;
-        margin-left: 10%;
-        width: 10%;
-        background-color: var(--pink);
-    }
-    div .clip-circle .aligner {
-        width: 10%;
-        height: 10%;
-    }
-}
-    
-
-
-#theme-switcher {
-    flex-direction: row;
-    background-color: var(--switch-circle-bg);
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    gap: 1.3rem;
-    cursor: pointer;
-    width: 6%;
-    height: auto;
-    padding: 0.66rem;  
-    left: 85%;
-    position: absolute;
-    bottom: 95%;
-    transition: var(--default-transition);
-   
-     
-    
-}
-
-#theme-switcher::before {
-    content: '';
-    position: absolute;
-    width: 39%;
-    height: 83%;
-    background-color: var(--sun-background);
-    border-radius: 50%;
-    z-index: 0;
-    transition: var(--default-transition);
-    transform: translateX(var(--switch-circle-pos));
-
-}
-
-#theme-switcher svg{
-    z-index: 1;
-    transition: var(--default-transition);
-}
-
-#icon-sun {
-    stroke: var(--icon-sun);
-    background-color: var(--sb);
-    border-radius: 50%;
-    margin-left: 6%;
-    transition: var(--default-transition);
-    fill: none;
-}
-
-
-#icon-moon{
-    background-color: var(--mb) ; 
-    border-radius: 50px;
-    stroke: var(--moon-color);
-    margin-left: 7%;
-    transform: var(--default-transition);
-    fill: none;
-
-}
 
 
 

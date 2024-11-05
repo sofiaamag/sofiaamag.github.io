@@ -26,103 +26,81 @@ body {
 
 
 nav {
-    display: flex;
+    display: inline-block;
     margin: 0;
-    padding: 2vw 0;
+    padding: 2% 0 0 0;
+    height: 100%;
     flex-direction: column;
     background-color: var(--pink);
     width: 100%;
-}
-
-#theme-switcher-container {
-    background-color: inherit;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    flex-wrap: wrap;
-    width: 7%;
-   margin: 2%;
-   padding-right: 7%;
-   position: relative;
-   left: 80%;
-   
+    transition: var(--default-transition);
 }
 
 #theme-switcher {
+    flex-direction: row;
     background-color: var(--switch-circle-bg);
     border-radius: 50px;
     display: flex;
     align-items: center;
-    gap: 1.33rem;
+    gap: 1.3rem;
     cursor: pointer;
-    width: auto;
+    width: 30%;
     height: auto;
-    margin-right: 5%;
     padding: 0.66rem;  
-    transform: translate(10%, 10%);
-    position: relative;
-    
+    position: absolute;
+    transition: var(--default-transition);
+    z-index: 4;
+    top: 70%;
+   
+  
+}
+
+#switcher-nav {
+    display: inline;
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 80%;
+    top: 2%;
+    text-align: center;
+
 }
 
 #theme-switcher::before {
     content: '';
     position: absolute;
-    width: 2.7rem;
-    height: 2.7rem;
-    background-color:  var(--sun-background);
+    width: 38.5%;
+    height: 85%;
+    background-color: var(--sun-background);
     border-radius: 50%;
     z-index: 0;
-    left: 6%;
+    transition: var(--default-transition);
+    transform: translateX(var(--switch-circle-pos));
 
 }
 
 #theme-switcher svg{
     z-index: 1;
-}
-
-@media (min-width: 20px) and (max-width: 650px) {
-    #theme-switcher-container {
-        display: none;
-    }
+    transition: var(--default-transition);
 }
 
 #icon-sun {
     stroke: var(--icon-sun);
-    background-color: var(--sun-background);
+    background-color: var(--sb);
     border-radius: 50%;
     margin-left: 4%;
-    
-    
-}
-
-#theme-switcher:hover::before {
-   border: solid 1px rgba(210, 171, 54, 0.48);
+    transition: var(--default-transition);
+    fill: none;
 }
 
 
 #icon-moon{
-    background-color: inherit; 
- 
-
-}
-
-@media (min-width: 250px) and (max-width: 650px) {
-    #theme-switcher-container,
-    #theme-switcher,
-    #theme-switcher::before,
-    {
-        width: 50% !important;
-        height: auto !important;
-
-
-    }
-
-    #icon-sun,
-    #icon-moon{
-        width: 30% !important;
-        height: 30% !important;
-        z-index: 4;
-    }
+    background-color: var(--mb) ; 
+    border-radius: 50px;
+    stroke: var(--moon-color);
+    margin-left: 7%;
+    transform: var(--default-transition);
+    fill: none;
 
 }
 
@@ -154,22 +132,22 @@ li {
 
 }
 
-nav h1{
-    display: inline-block;
-    font-size: 2rem;
-    margin-left: 5%;
-    margin-top: 0;
+h1{
+    display: inline;
+    margin-top: 1%;
     background-color: var(--pink);
-    width: 200px;
-    height: 40px;
-    bottom: 50%;
 
 }
 
 h1 a {
     all: unset;
-    display: inline-block;
+    font-size: 3.3vw;
+    right: 80%;
+    bottom: 30%;
     position: absolute;
+    width: 100%;
+    height: auto;
+    
 }
 
 
