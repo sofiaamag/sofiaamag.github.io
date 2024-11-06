@@ -246,7 +246,7 @@ font-weight: 100;
 
 }
 
-@media only screen and (min-width: 650px) and (max-width: 800px){
+@media only screen and (min-width: 600px) and (max-width: 800px){
   ol {
 all: unset;
 display: block;
@@ -289,7 +289,7 @@ font-weight: 100;
 
 }
 
-@media only screen and (min-width: 550px) and (max-width: 650px){
+@media only screen and (min-width: 550px) and (max-width: 600px){
   ol {
 all: unset;
 display: block;
@@ -380,7 +380,7 @@ font-weight: 100;
 all: unset;
 display: block;
 position: absolute; 
-top: 5%;
+top: 6%;
 right: 5%;
 width: 35%;
 height: auto;
@@ -417,12 +417,12 @@ font-weight: 100;
 
 }
 
-@media only screen and (min-width: 300px ) and (max-width: 420px){
+@media only screen and (min-width: 370px ) and (max-width: 420px){
   ol {
 all: unset;
 display: block;
 position: absolute; 
-top: 5%;
+top: 4%;
 right: 7%;
 width: 35%;
 height: auto;
@@ -448,7 +448,49 @@ background-color: var(--pink);
 width: auto;;
 height: auto;
 position: absolute;
-top: 5%;
+top: 4%;
+}
+
+
+h1 a {
+all: unset;
+font-weight: 100;
+}
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 370px){
+  ol {
+all: unset;
+display: block;
+position: absolute; 
+top: 3%;
+right: 11%;
+width: 40%;
+height: auto;
+
+}
+
+li {
+display: inline;
+margin: 0 0 0 1%;
+text-decoration: underline;
+background-color: var(--pink);
+font-size: 1.5vw;
+position: relative;
+top: 30%;
+
+}
+
+h1{
+display: inline;
+margin-left: 7%;
+margin-top: 1%;
+background-color: var(--pink);
+width: auto;;
+height: auto;
+position: absolute;
+top: 2%;
 }
 
 
@@ -548,12 +590,6 @@ div .clip-circle .aligner {
 @media only screen and (min-width: 100px) and (max-width: 600px){
   #eye-container{
     display: none;
-  }
-  h1 a{
-    font-size: 4vw;
-  }
-  h1{
-    top: 7%;
   }
 }
   
