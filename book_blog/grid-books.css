@@ -3,20 +3,54 @@
     margin: 0;
     padding: 0%;
     font-family: 'Courier New', Courier, monospace;
-    color: var(--navy);
-    background-color: rgb(239, 246, 238);
+    background-color: var(--background);
+    color: var(--font-color);
+    transition: var(--default-transition);
+    box-sizing: border-box;
   
 }
 
-:root {
+:root[data-theme="light"] {
     --pink: rgb(255, 106, 202);
     --royal-blue: rgb(29, 78, 187);
     --snow: rgb(255, 251, 249);
+    --background: var(--snow);
     --switch-circle-bg: rgb(237, 231, 227);
     --green: rgb(96, 199, 122);
     --navy: rgb(5, 47, 95);
     --sun-background: rgb(250, 208, 80);
+    --sb: var(--sun-background);
     --icon-sun: rgb(199, 140, 30);
+    --font-color: var(--navy);
+    --switch-circle-pos: 5%;
+    --moon-color: var(--navy);
+    --mb: var(--switch-circle-bg);
+
+    --eye: black;
+
+}
+
+:root[data-theme="dark"] {
+    --pink: rgb(182, 75, 144);
+    --green: rgb(51, 141, 74);
+    --navy: rgb(5, 47, 95);
+    --royal-blue: rgb(29, 78, 187);
+    --sun-background: var(--royal-blue);
+    --sb: var(--switch-circle-bg);
+    --background: var(--navy);
+    --font-color: var(--snow);
+    --snow: rgb(255, 251, 249);
+    --icon-sun: rgb(185, 174, 151);
+    --moon-color: var(--snow);
+    --mb: var(--royal-blue);
+    --switch-circle-bg: rgb(141, 57, 111);
+    --eye: var(--navy);
+    --switch-circle-pos: 10%;
+}
+
+:root {
+    --default-border-radius: 8px;
+    --default-transition: color 0.3s ease-in, transform 0.3s ease-in, background-color 0.3s ease-in-out, border-color 0.3s ease-in;
 }
 
 body {
@@ -28,12 +62,12 @@ body {
 nav {
     display: inline-block;
     margin: 0;
-    padding: 2% 0 0 0;
-    height: 100%;
+    padding: 2vw 0;
     flex-direction: column;
     background-color: var(--pink);
     width: 100%;
     transition: var(--default-transition);
+    border-radius: 15px;
 }
 
 #theme-switcher {
@@ -42,15 +76,18 @@ nav {
     border-radius: 50px;
     display: flex;
     align-items: center;
-    gap: 1.3rem;
+    justify-items: left;
+    gap: 12%;
     cursor: pointer;
     width: 30%;
-    height: auto;
-    padding: 0.66rem;  
+    height: 200%;
+    padding: 1% 3% 1% 3%;
     position: absolute;
     transition: var(--default-transition);
     z-index: 4;
     top: 70%;
+    right: 30%;
+    overflow: hidden;
    
   
 }
@@ -60,24 +97,28 @@ nav {
     position: absolute;
     width: 30%;
     height: auto;
-    left: 80%;
+    left: 70%;
     top: 2%;
     text-align: center;
+  
 
 }
+
 
 #theme-switcher::before {
     content: '';
     position: absolute;
-    width: 38.5%;
-    height: 85%;
+    width: 40%;
+    height: 89%;
     background-color: var(--sun-background);
     border-radius: 50%;
     z-index: 0;
     transition: var(--default-transition);
     transform: translateX(var(--switch-circle-pos));
+    left: 7%;
 
 }
+
 
 #theme-switcher svg{
     z-index: 1;
@@ -88,24 +129,36 @@ nav {
     stroke: var(--icon-sun);
     background-color: var(--sb);
     border-radius: 50%;
-    margin-left: 4%;
     transition: var(--default-transition);
     fill: none;
+    position: relative;
+    right: 3%;
+
 }
 
 
 #icon-moon{
+    position: relative;
     background-color: var(--mb) ; 
     border-radius: 50px;
     stroke: var(--moon-color);
-    margin-left: 7%;
+    left: 5%;
     transform: var(--default-transition);
     fill: none;
 
 }
 
+@media only screen and (min-width: 100px) and (max-width: 600px){
+    #theme-switcher {
+        display: none;
+
+    }
+
+}
+
 a {
     all: unset;
+    text-align: center;
 }
 
 ol {
@@ -151,14 +204,6 @@ h1 a {
 }
 
 
-
-.welcome {
-    display: grid;
-    text-align: center;
-    margin: 10%;
-    
-}
-
 @media (min-width: 1115px) and (max-width: 3500px) {
     .container {
         width: 90%;
@@ -175,13 +220,6 @@ h1 a {
 }
 
 
-@media (min-width: 720px) and (max-width: 1400px) {
-    ol  {
-        margin-left: 70%;
-        padding: 0;
-    }
-   
-}
 
 @media (min-width: 900px) and (max-width: 1160px) {
     .container {
@@ -198,9 +236,7 @@ h1 a {
 }
 
 @media (min-width: 715px) and (max-width: 900px){
-    ol {
-        margin-left: 65%;
-    }
+   
     .container {
         max-width: 1000px;
     }
@@ -232,9 +268,6 @@ h1 a {
 
 @media (min-width: 520px) and (max-width: 700px) {
 
-    ol { 
-        margin-left: 60%;
-}
 .container {
     width: 600px;
     margin: auto;
@@ -251,16 +284,7 @@ h1 a {
 }
 }
 
-@media (min-width: 10px) and (max-width: 550px) {
-    li {
-        font-size: 0.75rem;
-        display: inline;
-    }
-    h1 a{
-        font-size: 70%;
-        top: 50%;
-    }
-}
+
 
 @media (min-width: 350px) and (max-width: 520px) {
 
@@ -280,15 +304,6 @@ h1 a {
 }
 }
 
-@media (min-width: 250px) and (max-width: 520px) {
-    
-    li {
-        margin-left: 2px;
-    }
-    ol {
-        margin-left: 50%;
-    }
-}
 
 
 @media (min-width: 250px) and (max-width: 350px) {
@@ -305,8 +320,6 @@ h1 a {
    
 }
 }
-
-
 
 header{
     text-align: center;
@@ -350,7 +363,5 @@ header{
      justify-items: center;
 }
 
-a {
-    text-align: center;
-}
+
 
