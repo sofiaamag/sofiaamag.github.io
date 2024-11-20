@@ -15,13 +15,5 @@ const switchTheme = () => {
 
 document.querySelector('#theme-switcher').addEventListener('click', switchTheme);
 
-$(document).ready(() => {
-    $('.welcome').on('mouseover', () => {
-        $('.welcome').css({
-            
-        }
-            
-        )
-    })
-})
+
 

@@ -160,71 +160,68 @@ a {
 }
 
 
-ol {
-    all: unset;
-    display: block;
-   margin-left: 80%
-    
-  
-}
-
-ol * {
-    display: inline;
-    flex-wrap: nowrap;
-    margin-bottom: 80%;
-    margin-top: 10%;
-}
-
-li {
-    margin: clamp(5%, 1.5vw, 10%);
-    text-decoration: underline;
-    background-color: var(--pink);
-    
-    
-
-}
-
-h1{
-    display: inline;
-    margin-top: 1%;
-    background-color: var(--pink);
-
-}
-
-h1 a {
-    all: unset;
-    font-size: 3.3vw;
-    right: 80%;
-    bottom: 30%;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    
-}
-
-
 header {
     text-align: center;
     margin-top: 5%;
 }
- .container{
-    width: 100%;
-    height: auto;
+ .space{
+
+    height: 110%;
     display: block;
     text-align: center;
+    margin: 2% 0 2% 0;
 
  }
 
-.style-book-image {
-    margin: 5% auto;
-    height: auto;
+ #book-1 {
+    height: 35vw;
     width: 30%;
+    text-align: center;
+ }
+
+ #outline{
+    border-top:  0.1rem solid  black ;
 }
 
+ #heading-similar{
+    margin: 5% 0 3% 0;
+    font-size: 1.25rem;
+    margin-left: 5%;
 
+ }
+ #similar-container {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    overflow: hidden;
+    width: auto;
+    text-align: center;
+    justify-content: center;
 
-div .similar-container {
-    height: 600px;
-   border-top:  0.1rem solid  black ;
+   
+ }
+
+#grid-template-similar {
+    height: 20%;
    z-index: 6;
+ 
 }
+.wrap{
+    width: 17%;
+    height: 50%;
+    display: inline-block;
+    overflow: hidden;
+    justify-content: center;
+
+}
+
+.similar-book-image {
+    display: inline-block;
+    margin: 5% 0;
+    width: clamp(50px, 50%, 300px);
+    height: 11.5vw;
+    
+    
+   
+}
+

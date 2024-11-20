@@ -156,53 +156,6 @@ nav {
 
 }
 
-a {
-    all: unset;
-    text-align: center;
-}
-
-ol {
-    all: unset;
-    display: block;
-   margin-left: 80%
-    
-  
-}
-
-ol * {
-    display: inline;
-    flex-wrap: nowrap;
-    margin-bottom: 80%;
-    margin-top: 10%;
-}
-
-li {
-    margin: clamp(5%, 1.5vw, 10%);
-    text-decoration: underline;
-    background-color: var(--pink);
-    
-    
-
-}
-
-h1{
-    display: inline;
-    margin-top: 1%;
-    background-color: var(--pink);
-
-}
-
-h1 a {
-    all: unset;
-    font-size: 3.3vw;
-    right: 80%;
-    bottom: 30%;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    
-}
-
 
 @media (min-width: 1115px) and (max-width: 3500px) {
     .container {
@@ -332,6 +285,7 @@ header{
     background-color: black;
     overflow: hidden;
     width: auto;
+    text-align: center;
    
     
 }
@@ -353,7 +307,7 @@ header{
 }
 
 .all-books {
-    display: grid;
+   
     min-width: 25%;
     border:2px solid rgb(240, 233, 233);
     margin: 0%;

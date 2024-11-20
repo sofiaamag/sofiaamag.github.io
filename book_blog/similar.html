@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="books.css">
+    <link href="nav.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-    <div class="similar-container">
+<body id="all">
+    <p id="heading-similar">Compare Similar Books</p>
+    <div id="similar-container">
+        <div id="grid-template-similar">
 <!--needs to be coded to adjust for the each book -->  
-        <a><img class="style-book-image" src="Screenshot 2024-05-20 at 10.45.24 AM.png"></a>
-        <a><img href="x"></a>
-        <a><img href="x"></a>
-        <a><img href="x"></a>
+        <div class="wrap"><a><img id= "similar-1" class="similar-book-image" src="Screenshot 2024-05-20 at 10.45.24 AM.png"></a></div>
+        <div class="wrap"><a><img id="similar-2" class="similar-book-image" src="pool.jpeg"></a></div>
+        <div class="wrap"><a><img id="similar-3" class="similar-book-image" src="retro.png"></a></div>
+        <div class="wrap"><a><img id="similar-4" class="similar-book-image" src="pixels.webp"></a></div>
+        </div>
     </div>
-
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="jquery.js"></script>
     <script src="similar.js"></script>
+    
+    
 </body>
 </html>

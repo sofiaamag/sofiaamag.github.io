@@ -8,18 +8,3 @@ fetch('similar.html')
 })
 
 
-$(document).ready(() => {
-    $('.style-book-image').on('mouseenter', () => {
-        $('.style-book-image').css('border', '0.5rem solid black ;');
-    })
-    $('.style-book-image').on('mouseleave', () => {
-        $('.style-book-image').css('border', 'none');
-    })
-})
-
-const books = () => {
-    let book1 = document.getElementById();
-    console.log(book1)
-}
-
-books();

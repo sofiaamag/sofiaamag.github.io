@@ -8,6 +8,7 @@
     <link href="books.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="nav.css" rel="stylesheet" type="text/css">
+    <link href="nav.html" rel="stylesheet" type="text/html">
 
     <script>
         //Check local storage
@@ -42,15 +43,19 @@
 <body>
     <header>Book 1</header>
 
-        <div class="container" id="1-container">
+        <div class="space" id="1-container">
              <a  href="book-1.html"><img class="style-book-image" id= "book-1" src="Screenshot 2024-05-20 at 10.46.15 AM.png"></a>
         </div>
-        <div>
+        <div id="outline">
+            
             <script id="similar-book-recs" src="similar.html"></script>
+            <script src="similar.js"></script>
+
+            
         </div>
         <script src="app.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="similar.js"></script>
+        <script src="jquery.js"></script>
        
 </body>
 </html>
