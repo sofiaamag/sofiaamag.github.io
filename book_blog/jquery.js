@@ -1,9 +1,9 @@
 $(function() {
- $('#heading-similar').on('mouseenter', () => {
-    $('#heading-similar').css({
-        color: 'blue',
-        backgroundColor: 'gray',
-        fontSize: '24px'
-      })
- })
+ 
+ $('.wrap').on('click', event => {
+   $(event.currentTarget).css({
+      transform: 'translateY(-700px)'
+    });
+ });
+ 
 })
